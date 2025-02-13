@@ -1,0 +1,164 @@
+<html>
+<head>
+    <title>Avaliação - Pizzaria do Carlão</title>
+    <style>
+        body {
+            background-image: url("forninho.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: scroll;
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: rgb(143, 36, 36);
+            padding: 1px;
+            padding-left: 10px;
+            border-radius: 3px;
+            text-decoration: none;
+        }
+        main {
+            padding-top: 20px;
+            padding: 40px;
+            padding-left: 170px;
+            padding-right: 160px;
+            text-align: center;
+        }
+        ul {
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            display: inline;
+            list-style: none;
+            padding: 35px;
+            color: white;
+            font-size: large;
+            padding-left: 70px;
+        }
+        a:hover {
+            background-color: aliceblue;
+            text-decoration: none;
+        }
+        div.menu {
+            background-color: gray;
+            padding-top: 10px;
+            border-radius: 3px;
+            text-align: left;
+            padding-left: 50px;
+            padding: 7px;
+            text-align: center;
+        }
+        footer {
+            display: flex;
+            justify-content: space-around;
+            border-color: aliceblue;
+            position: fixed;
+            bottom: 0;
+            padding: 10px;
+            border: solid aliceblue;
+            width: 100%;
+            background-color: rgba(165, 42, 42, 0.452);
+        }
+        img {
+            border: solid aliceblue;
+            margin: 8px;
+            margin-top: 30px;
+        }
+        a:visited {
+            color: aliceblue;
+            text-decoration: none;
+        }
+        a {
+            text-decoration: none;
+        }
+        .pizza-container {
+            display: inline-block;
+            margin: 10px;
+            text-align: center;
+        }
+        .pizza-name {
+            margin-top: 5px;
+            font-size: 20px;
+            color: white;
+        }
+        .form-container {
+            background-color: rgba(128, 128, 128, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            text-align: left;
+            margin-top: 20px;
+        }
+        .form-container label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        .form-container input, .form-container select, .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+        .form-container button {
+            background-color: rgb(143, 36, 36);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: rgb(165, 42, 42);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html"><h1 style="text-align: center;">Pizzaria do Daniel</h1></a>
+    </header>
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="bebidas.html">Bebidas</a></li>
+            <li><a href="avaliacao.html">Avaliação</a></li>
+        </ul>
+    </div>
+    <main>
+        <div class="form-container">
+            <h2>Avalie nossa pizzaria</h2>
+            <form action="#" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="nota">Nota (de 1 a 5):</label>
+                <select id="nota" name="nota" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+
+                <label for="comentario">Comentário:</label>
+                <textarea id="comentario" name="comentario" rows="5" required></textarea>
+
+                <button type="submit">Enviar Avaliação</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <h3><a href="">Contate-nos</a></h3>
+        <a href=""><h3>A melhor pizza da região</h3></a>
+        <a href=""><h3>Desenvolvido por Daniel</h3></a>
+    </footer>
+</body>
+</html>

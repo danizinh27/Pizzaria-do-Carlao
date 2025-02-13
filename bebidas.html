@@ -1,27 +1,35 @@
 <html>
 <head>
-       <title>Pizzaria do Carlão</title>
+    <title>Pizzaria do Carlão</title>
     <style>
-        body{
+        body {
             background-image: url("forninho.jpg");
             background-repeat: no-repeat;
             background-size: cover;
             background-attachment: scroll;
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
         }
-        header{       
-            background-color: brown;
+        header {
+            background-color: rgb(143, 36, 36);
             padding: 1px;
             padding-left: 10px;
             border-radius: 3px;
+            text-decoration: none;
         }
-        main{
+        main {
             padding-top: 20px;
             padding: 40px;
             padding-left: 170px;
             padding-right: 160px;
             text-align: center;
-        }   
-        li{
+        }
+        ul {
+            padding: 0;
+            margin: 0;
+        }
+        li {
             display: inline;
             list-style: none;
             padding: 35px;
@@ -29,12 +37,12 @@
             font-size: large;
             padding-left: 70px;
         }
-        a.hover{
+        a:hover {
             background-color: aliceblue;
+            text-decoration: none;
         }
-        div{
+        div.menu {
             background-color: gray;
-            font: arial;
             padding-top: 10px;
             border-radius: 3px;
             text-align: left;
@@ -42,54 +50,122 @@
             padding: 7px;
             text-align: center;
         }
-        footer{
-            border-color: aliceblue;          
+        footer {
+            display: flex;
+            justify-content: space-around;
+            border-color: aliceblue;
             position: fixed;
             bottom: 0;
             padding: 10px;
             border: solid aliceblue;
+            width: 100%;
+            background-color: rgba(165, 42, 42, 0.452);
+            
         }
-        img{
+        img {
             border: solid aliceblue;
-            margin: 8PX;
+            margin: 8px;
             margin-top: 30px;
         }
-        a:visited{
-        color: aliceblue;
+        a:visited {
+            color: aliceblue;
+            text-decoration: none;
         }
-        
+        a {
+            text-decoration: none;
+        }
+        .pizza-container {
+            display: inline-block;
+            margin: 10px;
+            text-align: center;
+        }
+        .pizza-name {
+            margin-top: 5px;
+            font-size: 20px;
+            color: white;
+        }
     </style>
 </head>
-<body style="background-color: black; color: white;">
-  <header>
-    <a href="index.html"><h1 style="text-align: center;">Pizzaria do Daniel</h1></a>
-</header style font="arial">
-<div> <li><a href="">Promoção do dia</a></li>
-    <li><a href="">Sabores de pizza</a></li>
-    <li><a href="">Monte sua pizza</a></li>
-    <li><a href="">Combos de massa</a></li>
-    <li><a href="">Cardápio</a></li>
-    <li><a href="bebidas.html">Bebidas</a></li></div>
-<main>
-    <a href=""><img src="calabresa.jpg" height="186px" width="300px"></a>
-    <a href=""><img src="chocolate.webp" height="186px" width="300px"></a>
-    <a href=""><img src="frango.jpg" height="186px"></a>
-    <a href=""><img src="4queijos.jpg"  height="186px" width="300px"></a>
-    <a href=""><img src="marguerita.jpg"  height="186px" width="300px"></a>
-    <a href=""><img src="vegana.jpg"  height="186px" width="325px"></a>
-    <a href=""><img src="sushi.webp"  height="186px" width="300px"></a>
-    <a href=""><img src="portuguesa.jpg"  height="186px" width="300px"></a>
-    <a href=""><img src="banana.jpg"  height="186px" width="325px"></a>
-    <a href=""><img src="bacon.jpg"  height="186px" width="300px"></a>
-    <a href=""><img src="romeuejulieta.jpg"  height="186px" width="300px"></a>
-    <a href=""><img src="pepperoni.webp"  height="186px" width="325px"></a>
-    <a href=""><img src="alhoeoleo.jpg"  height="186px" width="300px"></a>
-    <a href=""><img src="camarao.jpg"  height="186px" width="300px"></a>
-    <a href=""><img src="americana.webp"  height="186px" width="325px"></a>
-</main>
-<footer>
-    <h3>Pizzaria do Carlão</h3>
-    <h4>Desenvolvido pelo Daniel</h4>
-</footer>
+<body>
+    <header>
+        <a href="index.html"><h1 style="text-align: center;">Pizzaria do Daniel</h1></a>
+    </header>
+    <div class="menu">
+        <ul>
+            <li><a href="">Promoção do dia</a></li>
+            <li><a href="">Sabores de pizza</a></li>
+            <li><a href="">Monte sua pizza</a></li>
+            <li><a href="">Combos de massa</a></li>
+            <li><a href="bebidas.html">Bebidas</a></li>
+        </ul>
+    </div>
+    <main>
+        <div class="pizza-container">
+            <a href=""><img src="cocacola.webp" height="186px" width="200px"></a>
+            <div class="pizza-name">Coca-Cola</div>
+        </div>
+        <div class="pizza-container">
+            <a href=""><img src="pepsi.jpg" height="186px" width="200px"></a>
+            <div class="pizza-name">Pepsi</div>
+        </div>
+        <div class="pizza-container">
+            <a href=""><img src="guarana.webp" height="186px" width="200px"></a>
+            <div class="pizza-name">Guaraná</div>
+        </div>
+        <div class="pizza-container">
+            <a href=""><img src="fantalaranja.webp" height="186px"></a>
+            <div class="pizza-name">Fanta laranja</div>
+        </div>
+        <div class="pizza-container">
+            <a href=""><img src="fantauva.webp" height="186px" width="200px"></a>
+            <div class="pizza-name">Fanta uva</div>
+        </div>
+        <div class="pizza-container">
+            <a href=""><img src="h20.jpg" height="200px" width="200px"></a>
+            <div class="pizza-name">H20</div>
+        </div>
+        <div class="pizza-container">
+            <a href=""><img src="agua.webp" height="200px" width="200px"></a>
+            <div class="pizza-name">Água</div>
+        </div>
+       
+        <div class="pizza-container">
+            <a href=""><img src="portuguesa.jpg" height="186px" width="300px"></a>
+            <div class="pizza-name">Portuguesa</div>
+        </div>
+        <div class="pizza-container">
+            <a href=""><img src="banana.jpg" height="186px" width="325px"></a>
+            <div class="pizza-name">Banana</div>
+        </div>
+        <div class="pizza-container">
+            <a href=""><img src="bacon.jpg" height="186px" width="300px"></a>
+            <div class="pizza-name">Bacon</div>
+        </div>
+        <div class="pizza-container">
+            <a href=""><img src="romeuejulieta.jpg" height="186px" width="300px"></a>
+            <div class="pizza-name">Romeu e Julieta</div>
+        </div>
+        <div class="pizza-container">
+            <a href=""><img src="pepperoni.webp" height="186px" width="325px"></a>
+            <div class="pizza-name">Pepperoni</div>
+        </div>
+        <div class="pizza-container">
+            <a href=""><img src="alhoeoleo.jpg" height="186px" width="300px"></a>
+            <div class="pizza-name">Alho e Óleo</div>
+        </div>
+        <div class="pizza-container">
+            <a href=""><img src="camarao.jpg" height="186px" width="300px"></a>
+            <div class="pizza-name">Camarão</div>
+        </div>
+        <div class="pizza-container">
+            <a href=""><img src="americana.webp" height="186px" width="325px"></a>
+            <div class="pizza-name">Americana</div>
+        </div>
+    </main>
+    <footer>
+        <h3><a href="">Contate-nos</a></h3>
+       <a href=""><h3>A melhor pizza da região</h3></a>
+        <a href=""><h3>Desenvolvido por Daniel</h3></a>
+        </footer>
 </body>
 </html>
